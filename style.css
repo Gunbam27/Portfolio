@@ -1,5 +1,11 @@
 /* Global */
-
+@font-face {
+  font-family: 'MapoFlowerIsland';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 :root {
   /* Color */
   --color-white: #ffffff;
@@ -39,17 +45,24 @@
 
 body {
   margin: 0;
-  font-family: 'Gowun Batang', serif;
-  font-family: 'Jua', sans-serif;
-  cursor: defalut;
+  cursor: default;
+  font-family: 'MapoFlowerIsland';
 }
 a {
   text-decoration: none;
   color: var(--color-white);
 }
 ul {
-  list-style: none;
   padding-left: 0;
+}
+li {
+  list-style: none;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 /* Typography */
 
@@ -99,6 +112,9 @@ p {
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
 }
+.navbar__logo img {
+  width: 25px;
+}
 .navbar__menu__item {
   padding: 8px 12px;
   margin: 0 4px;
@@ -110,4 +126,31 @@ p {
 }
 .navbar__menu__item:hover {
   background-color: var(--color-dark-purple);
+}
+
+/* Home */
+#home {
+  background: url('imgs/home-background.png') center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+.home__title,
+.home__description {
+  color: var(--color-white);
+  margin: 5px;
+}
+.home__contact {
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
