@@ -108,11 +108,11 @@ p {
   align-items: center;
   color: var(--color-white);
   padding: 8px;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
   background-color: var(--color-purple);
-  padding: 8px;
   transition: all var(--animation-duration) ease-in-out;
 }
 
