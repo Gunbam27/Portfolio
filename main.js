@@ -1,6 +1,6 @@
 'use strict';
 
-// Make navbar tranparet when it is on the top
+// Make navbar transparet when it is on the top
 const navbar = document.querySelector('#navbar');
 const navbarHeight = navbar.getBoundingClientRect().height;
 document.addEventListener('scroll', () => {
@@ -20,7 +20,14 @@ navbarMenu.addEventListener('click', (event) => {
   if (link == null) {
     return;
   }
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
+});
+
+//Navbar toglle button for small screen
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', () => {
+  navbarMenu.classList.toggle('open');
 });
 
 //Handle click on "Contact me" button on home
