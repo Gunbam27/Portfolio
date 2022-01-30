@@ -323,7 +323,7 @@ p {
   line-height: 24px;
   display: inline-block;
   position: absolute;
-  right: 50px;
+  right: 10px;
   opacity: 0;
   transition: all ease-in var(--animation-duration);
 }
@@ -553,7 +553,10 @@ p {
   }
   .category__btn {
     margin: 4px 0;
-    width: 100%;
+    width: 50%;
+  }
+  .category__count {
+    right: 50px;
   }
   .project {
     flex-grow: 1;
