@@ -553,10 +553,10 @@ p {
   }
   .category__btn {
     margin: 4px 0;
-    width: 50%;
+    width: 80%;
   }
   .category__count {
-    right: 50px;
+    right: 30px;
   }
   .project {
     flex-grow: 1;
