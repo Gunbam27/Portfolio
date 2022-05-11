@@ -309,6 +309,17 @@ p {
 .left__title{padding:30px 0px;text-align: left;}
 .left__desc p{font-weight: var(--weight-bold);padding:10px 0;text-align: left;}
 .left__desc p span{font-weight: var(--weight-regular);line-height:30px;}
+.left__btn{padding:30px 0}
+.left__btn button{
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  color: var(--color-purple);
+  width:170px;
+  height: 50px;
+  border:2px solid var(--color-pink-purple);
+  border-radius: 5px;
+}
+.left__btn button:hover{background-color: var(--color-pink-purple);color:white;transition:all .6s;}
 .section__inner-right img{width:600px;}
 
 
