@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- saved from url=(0046)http://127.0.0.1:5500/window_XYcoordinate.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .boxs {
+        display: inline-block;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: yellow;
+        width: 100px;
+        height: 100px;
+      }
+      .special {
+        background-color: orange;
+        display: inline-flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+    <script>
+        const special = document.querySelector('.special');
+        const rect = special.getBoundingClientRect();
+        console.log(rect)
+    </script></head></html>
