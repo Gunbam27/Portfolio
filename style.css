@@ -311,14 +311,13 @@ p {
 .left__btn button{
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
+  color: var(--color-purple);
   width:170px;
   height: 50px;
   border:2px solid var(--color-pink-purple);
   border-radius: 5px;
 }
-.left__btn button:hover{background-color: var(--color-pink-purple);transition:all .6s;}
-.left__btn button:hover a{color:white;}
-.left__btn button a{color: var(--color-purple);}
+.left__btn button:hover{background-color: var(--color-pink-purple);transition:all .6s;color:white;}
 .section__inner-right img{width:600px;}
 
 
@@ -368,7 +367,7 @@ p {
   color: var(--color-deep-purple);
 }
 .contact__rights{
-  font-size: var(--font-medium)
+  font-size: var(--font-medium);
   position:absolute;
   bottom:0;
   right: 0;
