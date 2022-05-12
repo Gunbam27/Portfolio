@@ -53,7 +53,7 @@
   box-sizing: border-box;
   /* outline: 1px solid lime; */
 }
-
+html,body{width:100%;height:100%;}
 body {
   margin: 0;
   cursor: default;
@@ -77,7 +77,6 @@ button {
   border: none;
   outline: none;
 }
-/* Typography */
 
 h1 {
   font-size: var(--font-large);
@@ -109,7 +108,7 @@ p {
 
 /* Navbar */
 #navbar {
-  /* position: relative; */
+  position: absolute;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -151,7 +150,6 @@ p {
   border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
-
 .navbar__toggle-btn {
   top: 16px;
   position: absolute;
@@ -164,8 +162,7 @@ p {
 /* Home */
 #home {
   background: var(--color-pink-purple);
-  padding: 475px;
-  padding-top: 240px;
+  padding: 240px 0;
   text-align: center;
 }
 .home__avatar {
@@ -178,7 +175,7 @@ p {
 .home__description {
   color: var(--color-white);
   line-height:60px;
-  margin: 5px;
+  margin: 30px;
 }
 .home__contact {
   color: var(--color-white);
@@ -195,7 +192,8 @@ p {
 }
 /*Section common*/
 .section {
-  height:940px;
+  width:100%;
+  height:100%;
   text-align: center;
   padding: 50px;
   margin: auto;
@@ -329,6 +327,7 @@ p {
   background-color: var(--color-pink-purple);
 }
 .contact__container{
+  position:relative;
   width:1200px;
   margin:0 auto;
   padding: 20px;
@@ -344,12 +343,15 @@ p {
   font-size: var(--font-large);
   padding: 32px 0;
 }
-.contact__txt *{
+.contact__txt{padding: 40px;}
+.contact__txt p{
   color: var(--color-white);
-  font-size: var(--font-regular);
-  font-weight: var(--weight-regular)
+  font-size: var(--font-medium);
+  font-weight: var(--weight-regular);
+  padding:40px;
+  line-height:50px;
 }
-.contact__email{font-size: var(--font-regular);}
+.contact__email{font-size: var(--font-medium);}
 .contact__links {
   display: inline-block;
   font-size: var(--font-medium);
@@ -359,12 +361,18 @@ p {
 .contact__links i {
   transition: all var(--animation-duration) ease-in;
   padding: 0 4px;
+  font-size: var(--font-medium);
 }
 .contact__links i:hover {
   transform: scale(1.1);
   color: var(--color-deep-purple);
 }
-.contact__rights{text-align: right;}
+.contact__rights{
+  font-size: var(--font-medium)
+  position:absolute;
+  bottom:0;
+  right: 0;
+}
 /* Scroll */
 .arrow-up {
   position: fixed;
