@@ -313,43 +313,58 @@ p {
 .left__btn button{
   font-size: var(--font-regular);
   font-weight: var(--weight-bold);
-  color: var(--color-purple);
   width:170px;
   height: 50px;
   border:2px solid var(--color-pink-purple);
   border-radius: 5px;
 }
-.left__btn button:hover{background-color: var(--color-pink-purple);color:white;transition:all .6s;}
+.left__btn button:hover{background-color: var(--color-pink-purple);transition:all .6s;}
+.left__btn button:hover a{color:white;}
+.left__btn button a{color: var(--color-purple);}
 .section__inner-right img{width:600px;}
 
 
 /*Contact*/
 #contact {
-  background-color: var(--color-dark-purple);
+  background-color: var(--color-pink-purple);
+}
+.contact__container{
+  width:1200px;
+  margin:0 auto;
+  padding: 20px;
 }
 .contact__title,
 .contact__email,
 .contact__rights {
   color: var(--color-white);
+  margin: 0;
 }
 
 .contact__title {
-  margin: 32px 0;
-}
-
-.contact__links {
   font-size: var(--font-large);
-  margin: 24px 0;
+  padding: 32px 0;
+}
+.contact__txt *{
+  color: var(--color-white);
+  font-size: var(--font-regular);
+  font-weight: var(--weight-regular)
+}
+.contact__email{font-size: var(--font-regular);}
+.contact__links {
+  display: inline-block;
+  font-size: var(--font-medium);
+  padding: 10px 0 ;
 }
 
 .contact__links i {
   transition: all var(--animation-duration) ease-in;
+  padding: 0 4px;
 }
 .contact__links i:hover {
   transform: scale(1.1);
-  color: var(--color-dark-grey);
+  color: var(--color-deep-purple);
 }
-
+.contact__rights{text-align: right;}
 /* Scroll */
 .arrow-up {
   position: fixed;
