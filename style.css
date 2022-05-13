@@ -392,15 +392,15 @@ p {
   pointer-events: auto;
 }
 
-/* For below 768px screen width */
+/* 미디어쿼리 768 width */
 @media screen and (max-width: 768px) {
   :root {
     /* Font size */
-    --font-large: 30px;
-    --font-medium: 18px;
-    --font-regular: 16px;
-    --font-small: 14px;
-    --font-micro: 12px;
+    --font-large: 35px;
+    --font-medium: 22px;
+    --font-regular: 18px;
+    --font-small: 19px;
+    --font-micro: 17px;
   }
   .navbar__toggle-btn {
     display: block;
@@ -411,7 +411,7 @@ p {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background-color: var(--color-purple);
+    background-color: var(--color-deep-purple);
   }
 
   #navbar.navbar--dark {
@@ -427,14 +427,15 @@ p {
     display: block;
   }
   .section {
-    padding: 16px;
-    padding-top: 42px;
+    padding: 30px;
+    /* padding-top: 42px; */
   }
   .about__majors {
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: 0px;
   }
+  .major-imoticons ul{width:auto;}
   .major {
     margin-bottom: 30px;
   }
@@ -446,29 +447,158 @@ p {
     text-align: center;
     margin-top: 10px;
   }
-
   .major {
     margin-bottom: 38px;
   }
-
-  .skillset {
+  .about-container {
+    padding: 50px 70px;
+}
+.section__inner-left {
+  
+  padding: 50px 15px;
+}
+.left__title {
+  padding: 0px;
+}
+.left__btn button {
+  width: 150px;
+}
+  .section__inner-right{margin: auto;}
+  .section__inner-right img {
+    width: 400px;
+}
+.contact__container {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contact__rights {
+  font-size: var(--font-regular);
+  bottom: -300px;
+  right: 214px;
+}
+.arrow-up {
+  bottom: 16px;
+  right: 16px;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+}
+}
+/* 미디어쿼리 360 width */
+@media screen and (max-width: 360px) {
+  :root {
+    /* Font size */
+    --font-large: 40px;
+    --font-medium: 24px;
+    --font-regular: 20px;
+    --font-small: 18px;
+    --font-micro: 16px;
+  }
+  .navbar__menu{
+    height: 260px;
+    margin: 5px 4px;
+  }
+  .navbar__menu__item {
+    height:60px;
+    padding: 8px 12px;
+    margin: 5px 4px;
+    line-height: 30px;
+  }
+  .home__title, .home__description {
+    margin: 28px;
+  }
+  #about.section{padding: 10px;}
+  #about>h1{
+    font-size: var(--font-medium);
+    margin:5px 0;
+  }
+  .about-container {
+    padding: 5px 6px;
+  }
+  .about__profile {
     flex-direction: column;
   }
-  .category__btn {
-    margin: 4px 0;
-    width: 80%;
+  .home__avatar{
+    width: 200px;
+    height: 200px;
   }
-  .category__count {
-    right: 30px;
+  .profile-text>p {
+    font-size: var(--font-micro);
+    font-weight: var(--weight-regular);
+    padding: 5px 15px;
   }
-  .project {
-    flex-grow: 1;
+  .profile-text-id{padding: 8px 22px;}
+  .profile-text-id p{
+    font-size: var(--font-small);
+    text-align: left;
   }
-  .arrow-up {
-    bottom: 16px;
-    right: 16px;
-    font-size: 25px;
+  .about__majors {
+    margin: 5px 0 5px 0;
+  }
+  .major {
+    margin-bottom: 10px;
+  }
+  .major__title{font-size: var(--font-regular);}
+  .major-imoticons ul {
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+    width: 199px;
+    font-size: 12px;
+    padding-top: 0px; 
+    padding-left: 0px;
+  }
+  .major-imoticons img {
     width: 50px;
     height: 50px;
+  }
+  .about__jobs{
+    flex-direction: column;
+  }
+  .job {
+    padding: 8px;
+  }
+  .section__inner {
+    flex-direction: column;
+  }
+  .section__inner-left {
+    width: auto;
+    padding: 0px 0px;
+  }
+  .left__desc p span{
+    font-size: var(--font-micro);
+  }
+  .left__btn {
+    padding: 5px 0;
+  }
+  .left__btn button {
+    width: 280px;
+    height: 40px;
+    font-size:var(--font-small);
+  }
+  .section__inner-right img {
+    width: 200px;
+  }
+  .contact__txt {
+    padding: 0px;
+  }
+  .contact__txt p {
+    color: var(--color-white);
+    font-size: var(--font-regular);
+    font-weight: var(--weight-regular);
+    padding: 15px;
+    line-height: 50px;
+  }
+  .contact__links {
+    font-size: var(--font-regular);
+    padding: 0px 0;
+  }
+  .contact__rights {
+    width:300px;
+    font-size: var(--font-small);
+    bottom: -400px;
+    right: 0px;
   }
 }
