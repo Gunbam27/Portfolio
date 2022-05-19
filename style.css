@@ -367,10 +367,10 @@ p {
   color: var(--color-deep-purple);
 }
 .contact__rights{
-  font-size: var(--font-medium);
+  font-size: var(--font-regular);
   position:absolute;
-  bottom:0;
-  right: 0;
+  bottom:-375px;
+  left: -200px;
 }
 /* Scroll */
 .arrow-up {
@@ -474,8 +474,8 @@ p {
 }
 .contact__rights {
   font-size: var(--font-regular);
-  bottom: -300px;
-  right: 214px;
+  bottom: -246px;
+  left: -15px;
 }
 .arrow-up {
   bottom: 16px;
@@ -600,7 +600,7 @@ p {
   .contact__rights {
     width:300px;
     font-size: var(--font-small);
-    bottom: -400px;
-    right: 0px;
+    bottom: -265px;
+    left: 0px;
   }
 }
